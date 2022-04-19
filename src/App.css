@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.store-toolbar {
+    text-align: right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.switch-button {
+    display: inline-block;
+    border: none;
+    background-color: white;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.store-cards-view {
+    margin: 0 auto;
+    width: 800px;
+    column-count: 3;
+    column-gap: 20px;
+}
+.shop-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 0 5px lightgrey, -3px 0 5px lightgrey, 0 8px 5px lightgrey;
+    text-align: center;
+}
+.shop-card-header {
+}
+.shop-card-name {
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.shop-card-color {}
+.shop-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-card-price {
+    font-weight: bold;
+    color: red;
+}
+.shop-card-add-button,
+.shop-item-add-button {
+    color: red;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid red;
+    border-radius: 16px;
+    height: 32px;
+    font-weight: bold;
+    padding: 0 5px;
+    width: 110px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.store-list-view {
+    margin: 0 auto;
+    width: 800px;
 }
-
-.App-link {
-  color: #61dafb;
+.shop-item {
+    height: 50px;
+    display: flex;
+    background-color: rgba(245,245,245,1);
+    align-items: center;
+    padding: 3px 15px;
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop-item:nth-child(n+2) {
+    margin-top: 10px;
+}
+.shop-image-container {
+    width: 100px;
+    height: 50px;
+    background-position: center 70%;
+    background-size: cover;
+}
+.shop-item-name {
+    width: 35%;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.shop-item-color {
+    width: 15%;
+}
+.shop-item-price {
+    width: 15%;
+    font-weight: bold;
+    color: red;
 }
